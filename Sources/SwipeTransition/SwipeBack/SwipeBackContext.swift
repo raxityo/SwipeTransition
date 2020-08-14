@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwipeTransitionObjC
 
 final class SwipeBackContext: Context<UINavigationController>, ContextType {
     // Delegate Proxies (strong reference)

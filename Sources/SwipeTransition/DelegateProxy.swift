@@ -6,7 +6,8 @@
 //  Copyright © 2017年 tattn. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import SwipeTransitionObjC
 
 class DelegateProxy<T>: STDelegateProxy {
     @nonobjc convenience init(delegates: [T]) {

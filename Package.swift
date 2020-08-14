@@ -24,7 +24,7 @@ let package = Package(
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
     // Targets can depend on other targets in this package, and on products in packages which this package depends on.
     .target(
-      name: "SwipeTransition-ObjC",
+      name: "SwipeTransitionObjC",
       dependencies: [],
       path: "Sources/SwipeTransition/objC",
       cSettings: [
@@ -33,7 +33,7 @@ let package = Package(
     ),
     .target(
       name: "SwipeTransition",
-      dependencies: ["SwipeTransition-ObjC"],
+      dependencies: ["SwipeTransitionObjC"],
       path: "Sources/SwipeTransition",
       exclude: ["objC"]
     ),
