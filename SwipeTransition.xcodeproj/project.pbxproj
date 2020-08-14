@@ -388,15 +388,13 @@
 		246C0B5C1FF55C2A0040E6BC /* SwipeTransition */ = {
 			isa = PBXGroup;
 			children = (
-				241BA6C91FEC271B002E8902 /* SwipeTransition.h */,
+				4DB3ACF524E62F1400A1DB58 /* objC */,
 				241BA6CA1FEC271B002E8902 /* Info.plist */,
 				2467A7AD1FEE52A4007A7AC9 /* SwipeBack */,
 				2467A7AE1FEE52BF007A7AC9 /* SwipeToDismiss */,
 				24914076203B39B300D3E4CD /* Context.swift */,
 				24914078203B475500D3E4CD /* TransitionHandleable.swift */,
 				241BA6EB1FECC571002E8902 /* InteractiveTransition.swift */,
-				2467A79F1FED4DEF007A7AC9 /* DelegateProxy.h */,
-				2467A7A01FED4E43007A7AC9 /* DelegateProxy.m */,
 				247E68A21FF2348600617B12 /* DelegateProxy.swift */,
 				2467A7C61FEF8938007A7AC9 /* AssocKey.swift */,
 				241A87AB2018367C00009390 /* OneFingerDirectionalPanGestureRecognizer.swift */,
@@ -409,6 +407,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DB3ACF524E62F1400A1DB58 /* objC */ = {
+			isa = PBXGroup;
+			children = (
+				241BA6C91FEC271B002E8902 /* SwipeTransition.h */,
+				2467A79F1FED4DEF007A7AC9 /* DelegateProxy.h */,
+				2467A7A01FED4E43007A7AC9 /* DelegateProxy.m */,
+			);
+			path = objC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
