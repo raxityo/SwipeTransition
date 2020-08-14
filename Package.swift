@@ -19,6 +19,7 @@ let package = Package(
       name: "SwipeTransition-ObjC",
       dependencies: [],
       path: "Sources/SwipeTransition/objC",
+      exclude: ["Sources/SwipeTransition/"],
       cSettings: [
         .headerSearchPath("Internal"),
       ]
