@@ -11,6 +11,14 @@ let package = Package(
       name: "SwipeTransition",
       targets: ["SwipeTransition"]
     ),
+    .library(
+      name: "SwipeTransitionAutoSwipeToDismiss",
+      targets: ["SwipeTransitionAutoSwipeToDismiss"]
+    ),
+    .library(
+      name: "SwipeTransitionAutoSwipeBack",
+      targets: ["SwipeTransitionAutoSwipeBack"]
+    ),
   ],
   targets: [
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -28,6 +36,22 @@ let package = Package(
       dependencies: ["SwipeTransition-ObjC"],
       path: "Sources/SwipeTransition",
       exclude: ["objC"]
+    ),
+    .target(
+      name: "SwipeTransitionAutoSwipeToDismiss",
+      dependencies: ["SwipeTransition"],
+      path: "Sources/Automation/AutoSwipeToDismiss",
+      cSettings: [
+        .headerSearchPath("Internal"),
+      ]
+    ),
+    .target(
+      name: "SwipeTransitionAutoSwipeBack",
+      dependencies: ["SwipeTransition"],
+      path: "Sources/Automation/AutoSwipeBack",
+      cSettings: [
+        .headerSearchPath("Internal"),
+      ]
     ),
   ]
 )
