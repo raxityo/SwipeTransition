@@ -26,10 +26,7 @@ let package = Package(
     .target(
       name: "SwipeTransitionObjC",
       dependencies: [],
-      path: "Sources/SwipeTransition/objC",
-      cSettings: [
-        .headerSearchPath("Internal"),
-      ]
+      path: "Sources/SwipeTransition/objC"
     ),
     .target(
       name: "SwipeTransition",
@@ -40,18 +37,12 @@ let package = Package(
     .target(
       name: "SwipeTransitionAutoSwipeToDismiss",
       dependencies: ["SwipeTransition"],
-      path: "Sources/Automation/AutoSwipeToDismiss",
-      cSettings: [
-        .headerSearchPath("Internal"),
-      ]
+      path: "Sources/Automation/AutoSwipeToDismiss"
     ),
     .target(
       name: "SwipeTransitionAutoSwipeBack",
       dependencies: ["SwipeTransition"],
-      path: "Sources/Automation/AutoSwipeBack",
-      cSettings: [
-        .headerSearchPath("Internal"),
-      ]
+      path: "Sources/Automation/AutoSwipeBack"
     ),
   ]
 )
